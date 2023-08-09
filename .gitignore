@@ -13,3 +13,7 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# 忽略文件内的内容
+bin/ 
+pkg/
