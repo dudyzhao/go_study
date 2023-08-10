@@ -18,4 +18,15 @@ func main() {
 		quarter2 = append(quarter2, strconv.Itoa(i))
 	}
 	fmt.Println("quarter2", quarter2)
+
+	remove := 2
+	if remove < len(months) {
+		fmt.Println("Before:",months,"Remove ",months[remove])
+		months = append(months[:remove],months[remove+1:]...)
+		fmt.Println("after ",months)
+	}
+
+	slice2 := make([]string,3)
+	copy(slice2,months)
+	fmt.Println(slice2)
 }
